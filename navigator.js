@@ -16,4 +16,5 @@ function updateMain(path, pages) {
 
 let pages = {};
 pages = loadPages(["home"])
-    .then(pages => updateMain("home", pages));
+while (pages["home"] == undefined) {}
+updateMain("home", pages);
