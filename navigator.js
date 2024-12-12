@@ -10,10 +10,9 @@ function loadPages(names) {
 
 function updateMain(path, pages) {
     const main = document.getElementById("main");
-    console.log(pages[path]);
+    console.log(pages);
     main.innerHTML = pages[path];
 }
 
-var pages = loadPages(["home"]);
-console.log(pages);
+let pages = loadPages(["home"]);
 updateMain("home", pages);
