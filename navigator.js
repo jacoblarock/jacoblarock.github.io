@@ -10,6 +10,7 @@ function loadPages(names) {
 
 function updateMain(path, pages) {
     const main = document.getElementById("main");
+    console.log(pages[path]);
     main.innerHTML = pages[path];
 }
 
