@@ -14,5 +14,6 @@ function updateMain(path, pages) {
     main.innerHTML = pages[path];
 }
 
-let pages = loadPages(["home"]);
-updateMain("home", pages);
+let pages = {};
+pages = loadPages(["home"])
+    .then(pages => updateMain("home", pages));
