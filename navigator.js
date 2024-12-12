@@ -14,4 +14,5 @@ function updateMain(path, pages) {
 }
 
 var pages = loadPages(["home"]);
+console.log(pages);
 updateMain("home", pages);
