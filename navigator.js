@@ -1,10 +1,11 @@
-function loadPages(names) {
+async function loadPages(names) {
     let pages = {};
     for (let i = 0; i < names.length; i++) {
         fetch(names[i] + ".html")
             .then(response => response.text())
             .then(data => pages[names[i]] = data);
     }
+    await Promise.all(fetchPromises);
     return pages;
 }
 
@@ -16,5 +17,5 @@ function updateMain(path, pages) {
 
 let pages = {};
 pages = loadPages(["home"])
-while (pages["home"] == undefined) {}
+while (pages["home"] === undefined) {}
 updateMain("home", pages);
