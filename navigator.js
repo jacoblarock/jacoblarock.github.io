@@ -16,5 +16,5 @@ function updateMain(path, pages) {
 }
 
 let pages = {};
-pages = await loadPages(["home"])
+pages = loadPages(["home"])
 updateMain("home", pages);
