@@ -1,20 +1,21 @@
 async function loadPages(names) {
-    let pages = {};
+    let pages = [];
     for (let i = 0; i < names.length; i++) {
-        fetch(names[i] + ".html")
+        await fetch(names[i] + ".html")
             .then(response => response.text())
-            .then(data => pages[names[i]] = data);
+            .then(data => pages.push(data));
     }
-    await Promise.all(fetchPromises);
     return pages;
 }
 
-function updateMain(path, pages) {
+function updateMain(path, pages, names) {
+    let i = names.indexOf(path);
     const main = document.getElementById("main");
-    console.log(pages);
-    main.innerHTML = pages[path];
+    pages.then(data => main.innerHTML = data[i]);
 }
 
-let pages = {};
-pages = loadPages(["home"])
-updateMain("home", pages);
+let names = ["home", "projects"];
+let pages = loadPages(names);
+document.addEventListener('DOMContentLoaded', function() {
+    updateMain("home", pages, names);
+}, false);
