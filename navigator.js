@@ -14,8 +14,15 @@ function updateMain(path, pages, names) {
     pages.then(data => main.innerHTML = data[i]);
 }
 
-let names = ["home", "projects"];
+let names = ["home", "projects", "resume", "contact"];
 let pages = loadPages(names);
+let split_loc = window.location.href.split("#");
+console.log(split_loc)
+let url = split_loc[0];
+let loc = "home";
+if (split_loc.length > 1)
+    loc = split_loc[1];
+console.log(loc);
 document.addEventListener('DOMContentLoaded', function() {
-    updateMain("home", pages, names);
+    updateMain(loc, pages, names);
 }, false);
