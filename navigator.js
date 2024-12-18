@@ -12,6 +12,7 @@ function updateMain(path, lang, pages, names) {
     let i = names.indexOf(path + "-" + lang);
     const main = document.getElementById("main");
     pages.then(data => main.innerHTML = data[i]);
+    window.location = window.location;
 }
 function updateHeader(lang, pages, names) {
     let i = names.indexOf("header-" + lang);
@@ -27,8 +28,8 @@ function updateLang(newLang, pages, names) {
     }
     lang = newLang;
     window.location = "/#" + path + "-" + lang;
-    updateMain(path, lang, pages, names);
     updateHeader(lang, pages, names);
+    updateMain(path, lang, pages, names);
 }
 
 var names = ["home-de", "home-en", "projects-de", "projects-en", "resume-de", "resume-en", "contact-de", "contact-en", "header-de", "header-en"];
