@@ -26,9 +26,6 @@ function updateLang(newLang, pages, names) {
         path = splitLoc[1].split("-")[0];
     }
     lang = newLang;
-    console.log(lang);
-    console.log(path);
-    console.log("/#" + path + "-" + lang);
     window.location = "/#" + path + "-" + lang;
     updateMain(path, lang, pages, names);
     updateHeader(lang, pages, names);
@@ -37,17 +34,18 @@ function updateLang(newLang, pages, names) {
 var names = ["home-de", "home-en", "projects-de", "projects-en", "resume-de", "resume-en", "contact-de", "contact-en", "header-de", "header-en"];
 var pages = loadPages(names);
 let splitLoc = window.location.href.split("#");
-console.log(splitLoc);
 var url = splitLoc[0];
 let loc = "home";
 var lang = "en";
-if (splitLoc.length > 1)
+if (splitLoc.length > 1) {
     loc = splitLoc[1];
     splitSplitLoc = loc.split("-");
     if (splitSplitLoc.length > 1) {
         loc = splitSplitLoc[0];
         lang = splitSplitLoc[1];
     }
+} else {
+    window.location = "/#home-en";
 document.addEventListener('DOMContentLoaded', function() {
     updateHeader(lang, pages, names)
     updateMain(loc, lang, pages, names);
