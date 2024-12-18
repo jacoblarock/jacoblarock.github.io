@@ -46,6 +46,7 @@ if (splitLoc.length > 1) {
     }
 } else {
     window.location = "/#home-de";
+}
 document.addEventListener('DOMContentLoaded', function() {
     updateHeader(lang, pages, names)
     updateMain(loc, lang, pages, names);
