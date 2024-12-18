@@ -36,7 +36,7 @@ var pages = loadPages(names);
 let splitLoc = window.location.href.split("#");
 var url = splitLoc[0];
 let loc = "home";
-var lang = "en";
+var lang = "de";
 if (splitLoc.length > 1) {
     loc = splitLoc[1];
     splitSplitLoc = loc.split("-");
@@ -45,7 +45,7 @@ if (splitLoc.length > 1) {
         lang = splitSplitLoc[1];
     }
 } else {
-    window.location = "/#home-en";
+    window.location = "/#home-de";
 document.addEventListener('DOMContentLoaded', function() {
     updateHeader(lang, pages, names)
     updateMain(loc, lang, pages, names);
