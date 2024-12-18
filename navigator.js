@@ -37,7 +37,7 @@ let splitLoc = window.location.href.split("#");
 var url = splitLoc[0];
 let loc = "home";
 var lang = "de";
-if (splitLoc.length > 1) {
+if (splitLoc.length > 1 && names.contains(splitLoc[1])) {
     loc = splitLoc[1];
     splitSplitLoc = loc.split("-");
     if (splitSplitLoc.length > 1) {
