@@ -3,7 +3,7 @@ async function loadData(name) {
     console.log(response);
     const json = await response.json();
     console.log(json);
-    return json;
+    return await json;
 }
 
 function updateMain(path, lang, pages, names) {
