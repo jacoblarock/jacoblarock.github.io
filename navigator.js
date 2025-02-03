@@ -3,7 +3,7 @@ async function loadData(name) {
     console.log(response);
     const json = await response.json();
     console.log(json);
-    return await json;
+    return json;
 }
 
 function updateMain(path, lang, pages, names) {
@@ -29,8 +29,8 @@ function updateLang(newLang, pages, names) {
     updateMain(path, lang, pages, names);
 }
 
-var names = loadData("names.json");
-var pages = loadData("pages.json");
+var names = await loadData("names.json");
+var pages = await loadData("pages.json");
 let splitLoc = window.location.href.split("#");
 var url = splitLoc[0];
 let loc = "home";
