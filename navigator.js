@@ -1,9 +1,10 @@
 async function loadData(name) {
+    let out = null;
     const response = await fetch(name);
-    console.log(response);
-    const json = await response.json().then(data => data);
+    const json = await response.json()
+        .then(data => out = data);
     console.log(json);
-    return json;
+    return out;
 }
 
 function updateMain(path, lang, pages, names) {
