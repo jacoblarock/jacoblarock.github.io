@@ -10,13 +10,13 @@ async function loadData(name) {
 function updateMain(path, lang, pages, names) {
     let i = names.indexOf(path + "-" + lang);
     const main = document.getElementById("main");
-    pages.then(data => main.innerHTML = data[i]);
+    main.innerHTML = pages[i];
     updateHeader(lang, pages, names);
 }
 function updateHeader(lang, pages, names) {
     let i = names.indexOf("header-" + lang);
     const header = document.getElementById("header");
-    pages.then(data => header.innerHTML = data[i]);
+    header.html = pages[i]
 }
 
 function updateLang(newLang, pages, names) {
@@ -31,12 +31,12 @@ function updateLang(newLang, pages, names) {
 }
 
 async function loadFunc() {
-    var names = await loadData("names.json");
-    var pages = await loadData("pages.json");
+    names = await loadData("names.json");
+    pages = await loadData("pages.json");
     let splitLoc = window.location.href.split("#");
-    var url = splitLoc[0];
-    var loc = "home";
-    var lang = "de";
+    url = splitLoc[0];
+    loc = "home";
+    lang = "de";
     if (splitLoc.length > 1 && names.includes(splitLoc[1])) {
         loc = splitLoc[1];
         splitSplitLoc = loc.split("-");
@@ -50,6 +50,12 @@ async function loadFunc() {
     updateHeader(lang, pages, names);
     updateMain(loc, lang, pages, names);
 }
+
+var names;
+var pages;
+var url;
+var loc;
+var lang;
 
 document.addEventListener('DOMContentLoaded', function() {
     loadFunc();
