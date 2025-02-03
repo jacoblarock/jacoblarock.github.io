@@ -15,8 +15,9 @@ function updateMain(path, lang, pages, names) {
 }
 function updateHeader(lang, pages, names) {
     let i = names.indexOf("header-" + lang);
+    console.log(i);
     const header = document.getElementById("header");
-    header.html = pages[i]
+    header.html = pages[i];
 }
 
 function updateLang(newLang, pages, names) {
