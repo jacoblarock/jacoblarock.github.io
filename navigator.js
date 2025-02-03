@@ -1,6 +1,8 @@
 async function loadData(name) {
     const response = await fetch("pages.json");
+    console.log(response);
     const json = await response.json();
+    console.log(json);
     return json;
 }
 
