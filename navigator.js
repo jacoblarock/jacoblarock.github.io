@@ -1,11 +1,7 @@
-async function loadPages(names) {
-    let pages = [];
-    for (let i = 0; i < names.length; i++) {
-        await fetch(names[i] + ".html")
-            .then(response => response.text())
-            .then(data => pages.push(data));
-    }
-    return pages;
+async function loadData(name) {
+    let out = await fetch("pages.json")
+        .then(response => response.json());
+    return out;
 }
 
 function updateMain(path, lang, pages, names) {
@@ -31,8 +27,8 @@ function updateLang(newLang, pages, names) {
     updateMain(path, lang, pages, names);
 }
 
-var names = ["home-de", "home-en", "projects-de", "projects-en", "resume-de", "resume-en", "contact-de", "contact-en", "header-de", "header-en"];
-var pages = loadPages(names);
+var names = loadData("names.json");
+var pages = loadData("pages.json");
 let splitLoc = window.location.href.split("#");
 var url = splitLoc[0];
 let loc = "home";
