@@ -3,7 +3,6 @@ async function loadData(name) {
     const response = await fetch(name);
     const json = await response.json()
         .then(data => out = data);
-    console.log(json);
     return out;
 }
 
@@ -15,7 +14,6 @@ function updateMain(path, lang, pages, names) {
 }
 function updateHeader(lang, pages, names) {
     let i = names.indexOf("header-" + lang);
-    console.log(i);
     const header = document.getElementById("header");
     header.innerHTML = pages[i];
 }
@@ -33,7 +31,6 @@ function updateLang(newLang, pages, names) {
 
 async function loadFunc() {
     names = await loadData("names.json");
-    console.log(names);
     pages = await loadData("pages.json");
     let splitLoc = window.location.href.split("#");
     url = splitLoc[0];
