@@ -33,6 +33,7 @@ function updateLang(newLang, pages, names) {
 
 async function loadFunc() {
     names = await loadData("names.json");
+    console.log(names);
     pages = await loadData("pages.json");
     let splitLoc = window.location.href.split("#");
     url = splitLoc[0];
