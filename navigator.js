@@ -1,6 +1,7 @@
 async function loadData(name) {
-    let out = await fetch("pages.json")
-        .then(response => response.json());
+    await fetch("pages.json")
+        .then(response => response.json())
+        .then(data => out = data);
     return out;
 }
 
