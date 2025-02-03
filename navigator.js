@@ -30,23 +30,27 @@ function updateLang(newLang, pages, names) {
     updateMain(path, lang, pages, names);
 }
 
+function loadFunc() {
+    let splitLoc = window.location.href.split("#");
+    var url = splitLoc[0];
+    var loc = "home";
+    var lang = "de";
+    if (splitLoc.length > 1 && names.includes(splitLoc[1])) {
+        loc = splitLoc[1];
+        splitSplitLoc = loc.split("-");
+        if (splitSplitLoc.length > 1) {
+            loc = splitSplitLoc[0];
+            lang = splitSplitLoc[1];
+        }
+    } else {
+        window.location = "/#home-de";
+    }
+}
+
 var names = loadData("names.json");
 var pages = loadData("pages.json");
-let splitLoc = window.location.href.split("#");
-var url = splitLoc[0];
-let loc = "home";
-var lang = "de";
-if (splitLoc.length > 1 && names.includes(splitLoc[1])) {
-    loc = splitLoc[1];
-    splitSplitLoc = loc.split("-");
-    if (splitSplitLoc.length > 1) {
-        loc = splitSplitLoc[0];
-        lang = splitSplitLoc[1];
-    }
-} else {
-    window.location = "/#home-de";
-}
 document.addEventListener('DOMContentLoaded', function() {
-    updateHeader(lang, pages, names)
+    loadFunc();
+    updateHeader(lang, pages, names);
     updateMain(loc, lang, pages, names);
 }, false);
