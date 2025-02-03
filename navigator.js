@@ -47,10 +47,10 @@ async function loadFunc() {
     } else {
         window.location = "/#home-de";
     }
+    updateHeader(lang, pages, names);
+    updateMain(loc, lang, pages, names);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     loadFunc();
-    updateHeader(lang, pages, names);
-    updateMain(loc, lang, pages, names);
 }, false);
