@@ -30,7 +30,9 @@ function updateLang(newLang, pages, names) {
     updateMain(path, lang, pages, names);
 }
 
-function loadFunc() {
+async function loadFunc() {
+    var names = await loadData("names.json");
+    var pages = await loadData("pages.json");
     let splitLoc = window.location.href.split("#");
     var url = splitLoc[0];
     var loc = "home";
@@ -47,8 +49,6 @@ function loadFunc() {
     }
 }
 
-var names = loadData("names.json");
-var pages = loadData("pages.json");
 document.addEventListener('DOMContentLoaded', function() {
     loadFunc();
     updateHeader(lang, pages, names);
