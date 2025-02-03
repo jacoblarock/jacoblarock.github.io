@@ -6,7 +6,7 @@ def get_names() -> list:
     files = os.listdir()
     for filename in files:
         if filename[-4:] == "html":
-            out.append(filename[:-4])
+            out.append(filename[:-5])
     return out
 
 def get_pages() -> list:
