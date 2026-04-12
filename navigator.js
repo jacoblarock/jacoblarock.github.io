@@ -21,10 +21,9 @@ function updateHeader(path, lang, pages, names) {
         return
     }
     names.forEach(name => {
-        if (name.includes("header-") || !name.includes(lang)) {
+        if (name.includes("header-") || !name.includes("-" + lang)) {
             return
         }
-        console.log(name);
         headerButton = document.getElementById(name)
         if (name.includes(path)) {
             headerButton.classList.add("active")
