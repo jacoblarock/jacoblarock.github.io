@@ -25,7 +25,7 @@ function updateHeader(path, lang, pages, names) {
             return
         }
         headerButton = document.getElementById(name)
-        if (name.contains(path)) {
+        if (name.includes(path)) {
             headerButton.classList.add("active")
         } else {
             headerButton.classList.remove("active")
