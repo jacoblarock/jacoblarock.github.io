@@ -10,12 +10,27 @@ function updateMain(path, lang, pages, names) {
     let i = names.indexOf(path + "-" + lang);
     const main = document.getElementById("main");
     main.innerHTML = pages[i];
-    updateHeader(lang, pages, names);
+    updateHeader(path, lang, pages, names);
 }
-function updateHeader(lang, pages, names) {
+
+function updateHeader(path, lang, pages, names) {
     let i = names.indexOf("header-" + lang);
     const header = document.getElementById("header");
     header.innerHTML = pages[i];
+    if (path == null) {
+        return
+    }
+    names.array.forEach(name => {
+        if (name.includes("header-") || !name.includes(lang)) {
+            return
+        }
+        headerButton = document.getElementById(name)
+        if (name.contains(path)) {
+            headerButton.classList.add("active")
+        } else {
+            headerButton.classList.remove("active")
+        }
+    });
 }
 
 function updateLang(newLang, pages, names) {
@@ -46,7 +61,7 @@ async function loadFunc() {
     } else {
         window.location = "/#home-de";
     }
-    updateHeader(lang, pages, names);
+    updateHeader(null, lang, pages, names);
     updateMain(loc, lang, pages, names);
 }
 
