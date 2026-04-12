@@ -20,7 +20,7 @@ function updateHeader(path, lang, pages, names) {
     if (path == null) {
         return
     }
-    names.array.forEach(name => {
+    names.forEach(name => {
         if (name.includes("header-") || !name.includes(lang)) {
             return
         }
