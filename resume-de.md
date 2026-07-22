@@ -1,7 +1,11 @@
-<h1>Lebenslauf</h1>
+# Lebenslauf
+
 <br><br>
-<h3>Persönliche Angaben</h3>
+
+### Persönliche Angaben
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 250px;"><h5>Wohnt in</h5></div>
@@ -16,9 +20,13 @@
         <div class="col-12 col-md-6">24.04.2002 in Washington, USA</div>
     </div>
 </div>
+
 <br><br>
-<h3>Studium</h3>
+
+### Studium
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 250px;"><h5>2021-2025</h5></div>
@@ -29,17 +37,21 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Beruflicher Werdegang</h3>
+
+### Beruflicher Werdegang
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 250px;"><h5>Seit 2025</h5></div>
         <div class="col-12 col-md-6">
-            Buhl Data Servie GmbH<br>
+            Buhl Data Service GmbH<br>
             <i>Data Engineering / Data Analyst</i>
             <ul>
-                <li>Aufbau und Pflege eines Data Warehouses inlk. ETL und API Integrationen</li>
+                <li>Aufbau und Pflege eines Data Warehouses inkl. ETL und API Integrationen</li>
                 <li>Aufbau einer Infrastruktur für Monitoring und Scheduling von Import-, Export- und Transformation-Jobs</li>
                 <li>Implementierung von statistischer Modellierung und Machine Learning Ansätzen sowie KI-Lösungen für Marketing-Optimierung</li>
             </ul>
@@ -80,9 +92,13 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Wissenschaftliche Arbeiten</h3>
+
+### Wissenschaftliche Arbeiten
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 250px;"><h5>Bachelorarbeit</h5></div>
@@ -99,9 +115,13 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Sonstige Erfahrungen und Qualifikationen</h3>
+
+### Sonstige Erfahrungen und Qualifikationen
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 250px;"><h5>Sprachen</h5></div>

@@ -1,0 +1,16 @@
+# Willkommen!
+
+<br><br>
+
+Ich bin Jacob. Ich arbeite aktuell im Data Team für die Buhl Data Service GmbH.
+
+Ich komme ursprünglich aus Washington, USA, und ich bin in verschiedenen Städten im Bundesstaat
+Colorado aufgewachsen. Nach Siegen bin ich 2021 gezogen, um zu studieren und wohne seitdem im
+schönen Herzen des Siegerlandes.
+
+Ich bin begeistert von Technik und lerne immer gerne was Neues, sei es für die Arbeit, für die
+Uni oder einfach aus Spaß. Außerdem bin ich oft draußen am Wandern, drinnen am Lesen oder
+am Genießen von einem guten Kaffee.
+
+Diese Seite ist eine kleine Zusammenfassung von mir als Person und dem, was ich schon geleistet
+und geschafft habe.

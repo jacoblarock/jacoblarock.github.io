@@ -1,0 +1,62 @@
+# Projects
+
+<br><br>
+
+### Thesis: Interpretable Deepfake Voice Detection: A Hybrid Deep-Learning Model and Explanation Evaluation
+
+This project, my bachelor thesis, focuses on explainable AI (XAI) in the space of audio
+deepfake detection. I developed a novel model architecture that is especially capable of
+combining features of diverse dimensionalities into a single end-classification and generating
+feature-based explanations. Aside from that, I also introduce two new metrics in this work, in
+order to evaluate the quality of the metrics produced by the model in an objective and
+mathematical manner. The work was presented at the 2025 Explainable AI World Conference and was
+published in the CEUR Workshop [Proceedings](https://ceur-ws.org/Vol-4017/#paper_13).
+Additionally, the work was published under the
+[selected theses](https://www.wineme.uni-siegen.de/wp-content/uploads/2025/05/LaRock_Bachelorarbeit.pdf)
+by the University of Siegen.<br>
+For more details, see the repository on
+[Repository](https://github.com/jacoblarock/fake_voices_xai).
+
+<br>
+
+### Expansion and Rebuild of the Reporting System at LapID
+
+For the purpose of automation of the reporting at LapID Service GmbH, I worked together with the
+DevOps to rewrite and expand export queries and establish a data lake for the internal reporting
+such that evaluations and report generation no longer had to be done manually, leading to an
+increase in efficiency. Aside from that, the expansions to the data available made new
+evaluations possible that were not possible before.
+
+<br>
+
+### Chroma_Llama
+
+A simple implementation of a query pipeline to answer questions based on documents stored in a
+vector database. Makes use of the vector database ChromaDB and the LLM library Ollama.
+[Repository](https://github.com/jacoblarock/chroma_llama)
+
+<br>
+
+### Paper: A Comprehensive Review on Audio Deepfake Detection with an Emphasis on Explainability
+
+This paper focuses on assessing the current state of explainability in the area of audio
+deepfake detection and provides a comprehensive view into the domain, with the result that
+explainability is not yet implemented as much as it should be and is not yet mature, but that
+the potential exists through features that I identified in the paper that could possibly be
+understood better by people.<br>
+
+<br>
+
+### Market analysis including customer and competition analysis for Webtron GbR
+
+This project was completed as a consulting project for the Study & Consult eV, completed with
+two other members in 2023. According to a survey performed at the end of the project, the
+customer's expectations were exceeded, and the results were realistic and usable.
+
+<br>
+
+### Practice Cards
+
+This is a simple web-app written with Python using Flask in addition to HTML and CSS paired with
+Bootstrap as well as pure JavaScript. See the
+[repository](https://github.com/jacoblarock/practicecards) for more.

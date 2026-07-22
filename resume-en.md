@@ -1,7 +1,11 @@
-<h1>Resume</h1>
+# Resume
+
 <br><br>
-<h3>Personal Details</h3>
+
+### Personal Details
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>Based in</h5></div>
@@ -16,9 +20,13 @@
         <div class="col-12 col-md-6">24.04.2002 in Washington, USA</div>
     </div>
 </div>
+
 <br><br>
-<h3>Education</h3>
+
+### Education
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>2021-2025</h5></div>
@@ -29,9 +37,13 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Work Experience</h3>
+
+### Work Experience
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>Since 2025</h5></div>
@@ -80,9 +92,13 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Theses and Publications</h3>
+
+### Theses and Publications
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>Thesis</h5></div>
@@ -99,9 +115,13 @@
         </div>
     </div>
 </div>
+
 <br><br>
-<h3>Other Experience and Qualification</h3>
+
+### Other Experience and Qualification
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>Language</h5></div>

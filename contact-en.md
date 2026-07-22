@@ -1,5 +1,7 @@
-<h1>Contact me.</h1>
+# Contact me.
+
 <br>
+
 <div class="container">
     <div class="row pb-4">
         <div class="col-12 col-md-6" style="max-width: 200px;"><h5>Email</h5></div>

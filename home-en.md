@@ -1,0 +1,15 @@
+# Welcome!
+
+<br><br>
+
+My name is Jacob. I am currently working in the data team at the Buhl Data Service GmbH.
+
+Originally from Washington, USA, I grew up and went to school in various cities in Colorado. In
+2021, I moved to the city of Siegen, Germany for university and have been living here since
+then.
+
+I am excited by technology and am always ready to learn something new, be it for work, uni or
+just for myself. Aside from that, I can also be frequently found outside hiking, inside reading
+or enjoying a good coffee.
+
+This site is a small summary of me as a person and the things which I have achieved.
