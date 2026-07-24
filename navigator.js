@@ -14,7 +14,7 @@ function log(eventName, path, lang) {
         },
         body: JSON.stringify({
             event_name: eventName,
-            event_date: path + "-" + lang
+            event_data: path + "-" + lang
         })
     });
 }
