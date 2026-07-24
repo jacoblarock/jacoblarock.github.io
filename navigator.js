@@ -6,7 +6,21 @@ async function loadData(name) {
     return out;
 }
 
+function log(eventName, path, lang) {
+    fetch("https://logging.jacoblarock.com/log", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            event_name: eventName,
+            event_date: path + "-" + lang
+        })
+    });
+}
+
 function updateMain(path, lang, pages, names) {
+    log("update_page", path, lang);
     let i = names.indexOf(path + "-" + lang);
     const main = document.getElementById("main");
     main.innerHTML = pages[i];
@@ -14,6 +28,9 @@ function updateMain(path, lang, pages, names) {
 }
 
 function updateHeader(path, lang, pages, names) {
+    if (path != null) {
+        log("update_language", path, lang);
+    }
     let i = names.indexOf("header-" + lang);
     const header = document.getElementById("header");
     header.innerHTML = pages[i];
