@@ -19,6 +19,22 @@ Mehr Details sind in der folgenden Repository zu finden:
 
 <br>
 
+### Agent_CoT_Alignment - Erklärbare Evaluierung der Intentionen von KI-Agenten
+
+Dieses Projekt untersucht die Verwendung von kleinen transformerbasierten Embedding-Modellen,
+um zu bewerten, wie gut ein LLM Chain of Thought mit der Intention eines Prompts übereinstimmt.
+Dabei werden zwei DistilBERT-basierte Modelle kombiniert, ein eingefrorener Embedder für den
+Prompt und ein trainierbarer Evaluator für die Antwort, die mit einem kontrastiven
+InfoNCE-ähnlichen Loss auf LLM-generierten aligned und misaligned CoT-Paaren trainiert werden.
+Über die binäre Alignment-Klassifikation hinaus ermöglicht das Embedding-basierte Design eine
+Token-level Explainability, indem Per-Token-Embeddings mit dem Prompt über Cosine-Similarity
+verglichen und als farbcodierte HTML-Ansicht dargestellt werden. Im Vergleich zu
+LLM-as-a-Judge-Methoden erlauben die kleinen Modelle eine schnellere, erklärbere, und günstigere
+Bewertung, die auch weniger anfällig für Prompt Injection ist.
+[Repository](https://github.com/jacoblarock/agent_cot_alignment)
+
+<br>
+
 ### Erweiterung und Umbau des Reporting-Systems in LapID
 
 Zur Automatisierung des Reportings in der LapID Service GmbH habe ich zusammen mit DevOps

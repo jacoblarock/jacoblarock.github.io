@@ -19,6 +19,20 @@ For more details, see the repository on
 
 <br>
 
+### Agent_CoT_Alignment - Explainably Evaluating the Intentions of AI Agents
+
+This is a project exploring the use of small transformer-based embedding models to assess how
+well an LLM chain of thought aligns with the intention of a given prompt. Two DistilBERT-based
+models are combined, a frozen embedder for the prompt and a trainable evaluator for the response,
+trained with a contrastive InfoNCE-style loss on LLM-generated aligned and misaligned CoT pairs.
+Aside from binary alignment classification, the embedding-based design enables token-level
+explainability by comparing per-token embeddings to the prompt via cosine similarity, rendered as
+a color-coded HTML view. Compared to LLM-as-a-judge methods, the small models allow for faster,
+more explainable lower-cost evaluation that is also less vulnerable to prompt injection.
+[Repository](https://github.com/jacoblarock/agent_cot_alignment)
+
+<br>
+
 ### Expansion and Rebuild of the Reporting System at LapID
 
 For the purpose of automation of the reporting at LapID Service GmbH, I worked together with the
