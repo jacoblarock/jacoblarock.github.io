@@ -35,6 +35,18 @@ Bewertung, die auch weniger anfällig für Prompt Injection ist.
 
 <br>
 
+### Transaction_Manager - REST-API zur Verwaltung gemeinsamer Gruppenausgaben
+
+Dieses Projekt ist eine in Python mit Flask umgesetzte REST-API zur Verwaltung gemeinsamer
+Ausgaben in Gruppen. Nutzer können Gruppen erstellen, anderen Nutzern über Invite-Tokens
+beitreten, geteilte Transaktionen sowie direkte Zahlungen zwischen Mitgliedern erfassen und
+sich die minimale Menge an Überweisungen berechnen lassen, die nötig ist, um die ausstehenden
+Salden einer Gruppe auszugleichen. Die Persistenz erfolgt über PostgreSQL und als WSGI-Server
+kommt waitress zum Einsatz. Das Deployment ist über Docker bzw. docker-compose abgedeckt
+Repository (https://github.com/jacoblarock/transaction_manager)
+
+<br>
+
 ### Erweiterung und Umbau des Reporting-Systems in LapID
 
 Zur Automatisierung des Reportings in der LapID Service GmbH habe ich zusammen mit DevOps

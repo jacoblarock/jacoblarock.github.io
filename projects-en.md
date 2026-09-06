@@ -33,6 +33,17 @@ more explainable lower-cost evaluation that is also less vulnerable to prompt in
 
 <br>
 
+**Transaction_Manager – REST‑API for Managing Shared Group Expenses**
+
+This project is a REST‑API implemented in Python with Flask for managing shared expenses within
+groups. Users can create groups, join other users via invite tokens, record shared transactions as
+well as direct payments between members, and have the minimal number of transfers calculated that
+is necessary to settle the outstanding balances of a group. Persistence is handled through
+PostgreSQL, and the WSGI server used is **waitress**. Deployment is covered by Docker and
+docker‑compose. Repository: <https://github.com/jacoblarock/transaction_manager>
+
+<br>
+
 ### Expansion and Rebuild of the Reporting System at LapID
 
 For the purpose of automation of the reporting at LapID Service GmbH, I worked together with the
