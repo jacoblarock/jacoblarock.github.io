@@ -39,7 +39,7 @@ This project is a REST‑API implemented in Python with Flask for managing share
 groups. Users can create groups, join other users via invite tokens, record shared transactions as
 well as direct payments between members, and have the minimal number of transfers calculated that
 is necessary to settle the outstanding balances of a group. Persistence is handled through
-PostgreSQL, and the WSGI server used is **waitress**. Deployment is covered by Docker and
+PostgreSQL, and the WSGI server used is waitress. Deployment is covered by Docker and
 docker‑compose. Repository: <https://github.com/jacoblarock/transaction_manager>
 
 <br>
